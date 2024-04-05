@@ -49,10 +49,15 @@ class Card1 extends StatelessWidget {
               crossAxisCount: 3, // Number of columns in the grid
               children: List.generate(15, (index) {
                 return Container(
-                  color: Colors.blue,
+                  color: Colors.blue[100],
                   margin: const EdgeInsets.all(10),
                   child: const Center(
-                    child: Icon(Icons.location_city),
+                    child: Column(
+                        children: [
+                            Icon(Icons.location_city),
+                            Text("location")
+                        ],
+                    ),
                   ),
                 );
               }),
