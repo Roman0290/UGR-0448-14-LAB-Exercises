@@ -26,7 +26,8 @@ class Card1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Teacher"),
+        title: Center(child: const Text("Teacher")),
+        backgroundColor: Colors.blue,
       ),
       body: Column(
         children: [
@@ -45,8 +46,8 @@ class Card1 extends StatelessWidget {
           ),
           Expanded(
             child: GridView.count(
-              crossAxisCount: 4, // Number of columns in the grid
-              children: List.generate(6, (index) {
+              crossAxisCount: 3, // Number of columns in the grid
+              children: List.generate(15, (index) {
                 return Container(
                   color: Colors.blue,
                   margin: const EdgeInsets.all(10),
